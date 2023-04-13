@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Reg Form</title>
+    <link rel="stylesheet" href="StudentReg.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-title">
+            <h1>Student Regstration Form</h1>
+        </div>
+        <form action="">
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="userName">Name:</label>
+                    <input type="text" id="userName" name="userName" placeholder="Enter full name">
+                </div>
+                <div class="user-input-box">
+                    <label for="fatherName">Father's Name:</label>
+                    <input type="text" id="fatherName" name="fatherName" placeholder="Father's name">
+                </div>
+                <div class="user-input-box">
+                    <label for="motherName"> Mother's Name:</label>
+                    <input type="text" id="motherName" name="motherName" placeholder="Mother's name">
+                </div>
+                <div class="user-input-box">
+                    <label for="phoneNumbe"> Phone Number: </label>
+                    <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Enter 10 digit">
+                </div>
+                <div class="user-input-box">
+                    <label for="phoneNumbe"> Email ID:</label>
+                    <input type="email" id="UserEmail" name="userEmail" placeholder="Enter valid email">
+                </div>
+               </div>
+
+               <div class="gender-box">
+                <label for="gender-details" class="gender-title">Gender:</label>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">Other</label>
+               </div>
+               
+               <div class="date-box">
+                <label for="date">Date Of Birth:</label>
+                <input type="date" name="date" id="date">
+               </div>
+               <div class="blood-group-box">
+                <label for="blood-group">Blood Group:</label>
+                <select name="blood-group-details" id="blood-group-details">
+                    <option value="">select</option>
+                    <option value="A+">A+</option>
+                    <option value="O+">O+</option>
+                    <option value="B+">B+</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB+">A-</option>
+                    <option value="AB+">O-</option>
+                    <option value="AB+">B-</option>
+                    <option value="AB+">AB-</option>
+                </select>
+               </div>
+               <div class="address-box">
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" cols="5" rows="6" placeholder="Address" maxlength="120"></textarea>
+               </div>
+               <div class="department-box">
+                <label for="department" class="department-title">Department:</label>
+                <div class="department-details">
+                <input type="radio" name="department" id="CSC">
+                <label for="CSC">CSC</label>
+                <input type="radio" name="department" id="EEE">
+                <label for="EEE">EEE</label>
+                <input type="radio" name="department" id="BBA">
+                <label for="BBA">BBA</label>
+                </div>
+                </div>
+
+               <div class="course-details-box">
+                <label for="course-title" class="course-title">Course:</label>
+                <div class="course-details">
+                <input type="checkbox" name="c" id="c">
+                <label for="c-language">C</label>
+                <input type="checkbox" name="c++" id="c++">
+                <label for="c++-language">C++</label>
+                <input type="checkbox" name="java" id="java">
+                <label for="java-language">Java</label>
+                <input type="checkbox" name="ai" id="ai">
+                <label for="ai-language">AI</label>
+                <input type="checkbox" name="ml" id="ml">
+                <label for="ml-language">Machine Learning</label>
+                <input type="checkbox" name="robotics" id="robotics">
+                <label for="robotics-language">Robotics</label>
+                </div>
+               </div>
+               <div class="file-box">
+                <label for="photo-id">Photo:</label>
+                <input type="file" name="photo" id="photo">
+               </div>
+               <div class="form-submit-btn">
+                <input type="submit" value="Submit">
+               </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    height: auto;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(21, 5, 88);
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+.form-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+.main-user-info {
+    padding: 20px 0;
+}
+.user-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.user-input-box {
+    width: 95%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.gender-box {
+    margin: 15px 0;
+    color: #fff;
+}
+.gender-title {
+    margin-right: 40px;
+}
+
+.form-submit-btn input{
+    cursor: pointer;
+}
+.date-box {
+    margin: 15px 0;
+    color: #fff;
+}
+#date {
+    padding:2px 10px 2px 10px;
+    margin-left:8px ;
+}
+.blood-group-box {
+    margin: 15px 0px;
+    color: #fff;
+}
+#blood-group-details {
+    margin-left: 10px;
+    padding:2px 10px 2px 10px;
+}
+.address-box {
+    margin: 30px 0px;
+    color: #fff;
+    display: flex;
+}
+#address {
+    margin-left: 45px;
+    width: 250px;
+    height: 100px;
+    border: none;
+    padding: 8px;
+    outline: none;
+    resize: none;
+}
+#address::-webkit-scrollbar{
+    display: none;
+}
+.department-box {
+    margin: 15px  0px; 
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+.department-title {
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.department-details {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    word-spacing: 10px;
+}
+.course-details-box {
+    margin: 15px 0px;
+    color: #fff;
+    display: flex;
+}
+.course-title {
+    margin-right: 50px;
+}
+.course-details {
+    margin-bottom: 15px;
+    word-spacing: 10px;
+}
+
+.form-submit-btn {
+    margin-top: 40px;
+}
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background-color: rgba(63, 114, 76, 0.7);
+}
+.form-submit-btn input:hover{
+    background: rgba(56, 204, 93, 0.7);
+    color: rgb(255, 255, 255);
+}
+@media(max-width:600px){
+    .container{
+        min-width: 280px;
+    }
+    .form-title{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+    .course-details{
+        margin-bottom: 15px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        word-spacing: 20px;
+    }
+}

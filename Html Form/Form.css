@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width:100%;
+    height:100vh;
+    display: flex;
+    background-image: linear-gradient(to right top, #590837, #541043, #4d184e, #422058, #332760, #262f65, #163568, #003b69, #004266, #00475e, #004b54, #0a4e4a);
+}
+.box {
+    width: 90%;
+    height: 500px;
+    background-image: linear-gradient(to right top, #0b1242, #21154d, #361757, #4b165f, #611466, #5a2575, #4f3383, #403f90, #005194, #005c88, #006274, #076560);
+    margin-top: 10%;
+    margin-left: auto;
+    border-radius: 200px 0px 0px 200px;
+    display: flex; 
+}
+.headline {
+  margin-top: 80px;
+  margin-left: 200px;
+  margin-bottom: 420px;
+  font-size: 40px;
+  color:rgb(141, 138, 138);
+}
+hr {
+    margin-left: 80px;
+    border:1px solid rgb(141, 138, 138);
+    border-radius: 10px;
+}
+.students-form {
+    margin-top: 150px;
+    margin-bottom: 400px;
+    margin-left: 40px;
+    display: flex;
+}
+.form-name {
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+}
+.fa-envelope-open {
+    margin-top: 5px;
+    font-size: 25px;
+    color: rgb(141, 138, 138);
+}
+.students-form:hover .fa-envelope-open{
+    transform: translate(10px);
+    transition: all 1s ease;
+    font-size: 28px;
+    color: red;
+}
+.form-name:hover{
+    color:rgb(141, 138, 138) ;
+}
+@media only screen and (max-width:960px){
+    .container{
+        min-width:280px;
+    }
+    .box{
+    width: 100%;
+    height:100%;
+    background:rgb(3, 45, 47);
+    margin:0;
+    border-radius: 0 0 0 0;
+    display: flex; 
+    }
+    .headline{
+        margin-top: 150px;
+        margin-left: 70px;
+        font-size: 25px;
+    }
+    hr {
+        margin-left:0;
+        border:none;
+    }
+    .students-form {
+        margin-top: 250px;
+        margin-left:0px;
+    }
+    .form-name {
+        font-size: 35px;
+        font-weight: 600;
+        margin-left: 15px;
+        color: rgba(242, 107, 188, 0.906);
+    }
+    .fa-envelope-open {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .form-name{
+        text-align: center;
+    }
+}
+
+    
+
